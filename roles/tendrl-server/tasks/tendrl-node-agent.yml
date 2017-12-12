@@ -52,3 +52,8 @@
   service:
     name=tendrl-node-agent
     state=started
+
+- name: restart rsyslog service
+  service:
+    name=rsyslog
+    state=restarted
